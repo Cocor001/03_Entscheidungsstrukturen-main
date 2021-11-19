@@ -1,41 +1,56 @@
-// // Entscheidungsstrukturen | control flow
+// // // Entscheidungsstrukturen | control flow
 
-// // Deklaration //**** Variant 1 **/
-// // let ageJohn, ageMark;
-// // let isJohnOlder;
+// // // Deklaration //**** Variant 1 **/
+// // // let ageJohn, ageMark;
+// // // let isJohnOlder;
 
-// // Deklaration + Assigment
+// // // Deklaration + Assigment
 const ageJohn = 30;
-const ageMark = 29;
+const ageMark = 32;
 
-// // Assigment (Wertzuweisung) //****  Variant 1 **/
-// // ageJohn = 30;
-// // ageMark = 25;
+// // // Assigment (Wertzuweisung) //****  Variant 1 **/
+// // // ageJohn = 30;
+// // // ageMark = 25;
 
-// // Deklaration
+// // // Deklaration
 let isJohnOlder, isJohnEqual;
 
-// //Test Logische Aussage
+// // //Test Logische Aussage
 isJohnOlder = (ageJohn > ageMark);
 isJohnEqual = (ageJohn == ageMark);
 
-// // console.log(typeof isJohnOlder) //****  Variant1 **/
+// // // console.log(typeof isJohnOlder) //****  Variant1 **/
 
-// // Ausgabe
-// console.log("ageJohn" + ageJohn);
-// console.log("ageMark" + ageMark);
-// console.log("isJohnOlder:" + isJohnOlder);
-// console.log("isJohnEqual:" + isJohnEqual);
-
-
-/**************** IF ************* */
-// TINA ----> There is no alternative!
-// entweder JA oder nix ... alternativlos
+// // // Ausgabe
+console.log("ageJohn" + ageJohn);
+console.log("ageMark" + ageMark);
+// // console.log("isJohnOlder:" + isJohnOlder);
+// // console.log("isJohnEqual:" + isJohnEqual);
 
 
-// if (true) 
-// if (false) 
+// /**************** IF ************* */
+// // TINA ----> There is no alternative!
+// // entweder JA oder nix ... alternativlos
+
+
+// // if (true) 
+// // if (false) 
+// if(isJohnOlder)
+// {
+//     console.log("John ist älter");
+// }
+
+/******************  IF - ELSE ****************/
+//Mit Alternative
+// entweder ja oder nein
+
 if(isJohnOlder)
 {
-    console.log("John ist älter");
+      // Ja-Zweig / true
+        console.log("John ist älter.");
+}
+else   
+{
+      // Nein-Zweig /false
+    console.log("John ist Jünger.");
 }
