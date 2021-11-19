@@ -6,7 +6,7 @@
 
 // // // Deklaration + Assigment
 const ageJohn = 30;
-const ageMark = 32;
+const ageMark = 30;
 
 // // // Assigment (Wertzuweisung) //****  Variant 1 **/
 // // // ageJohn = 30;
@@ -22,8 +22,8 @@ isJohnEqual = (ageJohn == ageMark);
 // // // console.log(typeof isJohnOlder) //****  Variant1 **/
 
 // // // Ausgabe
-console.log("ageJohn" + ageJohn);
-console.log("ageMark" + ageMark);
+// console.log("ageJohn" + ageJohn);
+// console.log("ageMark" + ageMark);
 // // console.log("isJohnOlder:" + isJohnOlder);
 // // console.log("isJohnEqual:" + isJohnEqual);
 
@@ -44,13 +44,63 @@ console.log("ageMark" + ageMark);
 //Mit Alternative
 // entweder ja oder nein
 
-if(isJohnOlder)
+// if (isJohnOlder)
+// {
+//       // Ja-Zweig / true
+//         console.log("John ist älter.");
+// }
+// else   
+// {
+//       // Nein-Zweig /false
+//     console.log("John ist Jünger.");
+// }
+
+// /******************  Teräre (tenary) Schreibwiese *************/
+// console.log ( (isJohnOlder) ? "John is Older" : "Mark is older");
+
+/*********************  IF - ELSE IF ***************************/
+
+// if (isJohnOlder)
+// {
+//       // Ja-Zweig / true
+//         console.log("John ist älter.");
+// }
+
+// else if(isJohnEqual)  //John gleich alt
+// {
+//         console.log("John ist gleich alt.");
+// }
+// else   // John Jünger
+// {
+//       // Nein-Zweig /false
+//     console.log("John ist Jünger.");
+// }
+
+/***************   Fallunterscheidung / CASE SWITCH *********/
+
+const firstName = " James";
+
+job = "driver";       // .. fährt TAXI! / UBER
+job = "diver";        // ..taucht im Rhein!
+Job = "artist";       //.. macht Music!
+job = "pilot";        // ...macht etwas anders!
+
+switch (job) 
 {
-      // Ja-Zweig / true
-        console.log("John ist älter.");
-}
-else   
-{
-      // Nein-Zweig /false
-    console.log("John ist Jünger.");
+    case "driver":  //Test auf ==
+        console.log(firstName + " fährt TAXI")
+        break;
+
+    case "diver":  //Test auf ==
+            console.log(firstName + " taucht im Rhein")
+        break;
+
+    case "artist":  //Test auf ==
+        console.log(firstName + " macht Music")
+        break;
+        
+    default:  //Black Swan !!!
+         console.log(firstName + " macht etwas anders!")
+
+        break;
 }
