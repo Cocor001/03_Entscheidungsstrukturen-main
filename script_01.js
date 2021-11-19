@@ -1,14 +1,14 @@
 // Entscheidungsstrukturen | control flow
 
-// Deklaration
+// Deklaration //**** Variant 1 **/
 // let ageJohn, ageMark;
 // let isJohnOlder;
 
 // Deklaration + Assigment
 const ageJohn = 30;
-const ageMark = 35;
+const ageMark = 30;
 
-// Assigment (Wertzuweisung)
+// Assigment (Wertzuweisung) //****  Variant 1 **/
 // ageJohn = 30;
 // ageMark = 25;
 
@@ -19,7 +19,7 @@ let isJohnOlder, isJohnEqual;
 isJohnOlder = (ageJohn > ageMark);
 isJohnEqual = (ageJohn == ageMark);
 
-// console.log(typeof isJohnOlder)
+// console.log(typeof isJohnOlder) //****  Variant1 **/
 
 // Ausgabe
 console.log("ageJohn" + ageJohn);
